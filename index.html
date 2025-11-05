@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Docce Maria – Bolos e Doces Artesanais</title>
+
+  <!-- Importando fonte Poppins (Google Fonts) -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      /* 🎨 Paleta de cores inspirada no Instagram @docce.maria */
+      --rosa-claro: #FFB6C1;
+      --rosa-forte: #FF5C8D;
+      --bege-suave: #FFF4F2;
+      --dourado-suave: #F9E0AE;
+      --marrom-doce: #8B5A4D;
+      --texto-escuro: #4B3B36;
+      --branco: #FFFFFF;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(180deg, var(--bege-suave) 0%, #FFDCE1 100%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      background: var(--branco);
+      padding: 30px 25px;
+      text-align: center;
+      border-radius: 25px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+      width: 90%;
+      max-width: 400px;
+      animation: fadeIn 1.2s ease;
+    }
+
+    .imgCenter img {
+      width: 140px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 18px;
+      border: 4px solid var(--rosa-claro);
+      box-shadow: 0 0 15px rgba(255, 182, 193, 0.7);
+      transition: transform 0.4s ease;
+    }
+
+    .imgCenter img:hover {
+      transform: scale(1.08);
+    }
+
+    h1 {
+      font-size: 1.9em;
+      font-weight: 700;
+      color: var(--rosa-forte);
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 14px;
+      color: var(--texto-escuro);
+      margin-bottom: 25px;
+      line-height: 1.6;
+    }
+
+    .Btns {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 25px;
+    }
+
+    .Btns button, .buy-button {
+      border: none;
+      border-radius: 12px;
+      font-weight: 600;
+      font-size: 15px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      padding: 12px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    }
+
+    .Btns button {
+      background-color: var(--bege-suave);
+      color: var(--marrom-doce);
+    }
+
+    .Btns button:hover {
+      background-color: var(--rosa-claro);
+      color: var(--branco);
+      transform: scale(1.03);
+    }
+
+    .Btns a, .buy-button a {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+
+    .buy-button {
+      background: linear-gradient(90deg, var(--rosa-forte), var(--rosa-claro));
+      color: var(--branco);
+      font-size: 16px;
+      letter-spacing: 0.5px;
+    }
+
+    .buy-button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 15px rgba(255, 92, 141, 0.4);
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 12px;
+      color: #777;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="imgCenter">
+      <img src="./432601120_756999779716872_3578217863909868095_n.jpg" alt="Perfil Docce Maria">
+    </div>
+
+    <h1>@docce.maria</h1>
+    <p>✨ Transformando momentos inesquecíveis através de bolos e doces artesanais.<br>
+       Feitos com amor em Brasília 💕</p>
+
+    <div class="Btns">
+      <button><a href="https://wa.me/6182627824" target="_blank">📞 WhatsApp</a></button>
+      <button><a href="https://www.instagram.com/docce.maria/" target="_blank">📸 Instagram</a></button>
+      <button><a href="https://www.facebook.com/people/Docce-Maria/100090562591936/" target="_blank">📘 Facebook</a></button>
+      <button><a href="https://www.linkedin.com/" target="_blank">💼 LinkedIn</a></button>
+      <button><a href="https://twitter.com/" target="_blank">🐦 Twitter</a></button>
+      <button><a href="https://www.tiktok.com/" target="_blank">🎵 TikTok</a></button>
+    </div>
+
+    <button class="buy-button">
+      <a href="https://wa.me/6182627824" target="_blank">🍰 Fazer Pedido</a>
+    </button>
+
+    <footer>© 2025 Docce Maria • Feito com amor 💖</footer>
+  </div>
+</body>
+</html>
